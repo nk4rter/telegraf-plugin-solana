@@ -4,7 +4,7 @@ import (
 	"flag"
 	"log"
 	"os"
-	"time"
+	// "time"
 
 	_ "telegraf-plugin-solana/plugins/inputs/solana"
 
@@ -12,7 +12,7 @@ import (
 )
 
 func main() {
-	var pollInterval = flag.Duration("poll_interval", 1*time.Second, "how often to send metrics")
+	var pollInterval = flag.Duration("poll_interval", 0, "how often to send metrics")
 	var configFile = flag.String("config", "", "path to the config file for this plugin")
 	var err error
 
