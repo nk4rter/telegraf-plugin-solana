@@ -144,7 +144,7 @@ func (s *SolanaPlugin) sendMetric(a telegraf.Accumulator) {
 			a.AddFields("blockProduction",
 				map[string]interface{}{
 					"leaderSlots":    v[0],
-					"blocksProduces": v[1],
+					"blocksProduced": v[1],
 				},
 				nil,
 			)

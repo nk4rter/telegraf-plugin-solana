@@ -1,4 +1,4 @@
-module telegraf-plugin-solana
+module solana-telegraf
 
 go 1.23.5
 
